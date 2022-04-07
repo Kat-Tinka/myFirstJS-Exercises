@@ -1,7 +1,26 @@
+//? Module-1-Project-2-Sprint-1
+//? JavaScript Basics Exercises
+//? Writing expressions with variables
+/* To get started, here are some simple exercises to create and use variables and expressions.
+ Variables are how you store data and results of calculations. 
+ Expressions are how you calculate values 
+ */
+
+//*  Exercise 1
+/*In your JavaScript file create a variable called myName with your name as the value. 
+Put your name inside string quotes, e.g., "my name". 
+Then add a line of code to print the variable name to the console after the previous message.
+Save your JavaScript file in your editor. 
+Reload the HTML page in your browser. 
+You should see your name printed. If not, investigate and fix it: 
+*/
+
 /*
 var myName = 'Karolina'
 console.log(myName)
 */
+
+//* Exercise 2
 
 /* //either you have : let firstName = "Jonas" OR: let firtsName = "Elisa" -not both!//
 let firstName="Jonas"
@@ -216,7 +235,7 @@ if (10 % 2 == 0) {
   console.log();
 }
 
-console.log("this is the reminder", 9 % 2);
+console.log("this is the remainder", 9 % 2);
 for (let i = 0; i < classNamesAndAge.length; i++) {
   console.log(classNamesAndAge[i].age);
   // more statements
