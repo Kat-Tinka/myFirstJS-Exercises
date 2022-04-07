@@ -74,7 +74,7 @@ console.log(myName + " " + "is" + " " + age + " " + "years old");
 console.log(1 + 1);
 
 /*
-Exercise 3
+//*Exercise 3
 Create a variable called juliaAge with a value 32. 
 Create another variable called ageDiff and 
 set it to an expression that calculates your age minus Julias's age. 
