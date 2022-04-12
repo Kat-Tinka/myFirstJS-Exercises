@@ -104,9 +104,10 @@ Make sure you see the correct message.
 Try changing your age in the JavaScript file 
 to make sure the other message prints when it should.
 */
-/*if (age>21) {console.log("You are older than 21")
-    
-} else {
+/*
+if (age>21) {
+  console.log("You are older than 21")
+    } else {
    console.log("You are not older than 21")
 }
 
@@ -345,3 +346,81 @@ function lowestNumber(myArray) {
 
 myResult = lowestNumber(myArray);
 console.log("Returned result of lowest number: " + myResult);
+
+//*Exercise 4
+/* 
+Write a function that receives an array as a parameter 
+and prints the biggest number in the array to the console.
+Save the changes to your JavaScript file.
+Reload the HTML page in your browser.
+You should see the biggest number in the array printed in the console.
+If not, investigate and fix it.
+*/
+
+//*var myArray3 = [5, 17, 39, 88, 2, 31, 23];
+/*function biggestNumber(myArray3) {
+  for (let r = 0; r < array.length; r++) {
+    if ("result biggestNumber = array[index]")
+  }
+}
+console.log(biggestNumber); 
+*/
+
+let highestNumber = Math.max(5, 17, 39, 88, 2, 31, 23);
+
+//todo OR with math.max(): -->when I added the numbers without "", it didn't work ( but with quotation marks its a string) -WHY?:
+//todo console.log(Math.max("5", "17", "39", "88", "2", "31", "23"));
+
+/*console.log(maxOfmyArray3(myArray3));   then the result in console.log: 
+main.js: 372 Uncaught ReferenceError: maxOfmyArray3 is not defined at main.js:372:9 */
+
+//todo freeCodeCamp Exercise
+//todo Three ways you can find the largest number in an array using JavaScript
+/* 
+In this article, I’m going to explain how to solve Free Code Camp’s “Return Largest Numbers in Arrays” 
+challenge. 
+This involves returning an array with the largest numbers from each of the sub arrays.
+
+There are the three approaches I’ll cover:
+1.with a FOR loop
+2.using the reduce() method
+3.using Math.max()
+
+The Algorithm Challenge Description
+Return an array consisting of the largest number from each provided sub-array. 
+For simplicity, the provided array will contain exactly 4 sub-arrays.
+Remember, you can iterate through an array with a simple for loop, 
+and access each member with array syntax arr[i]. 
+*/
+/*function largestOfFour(arr) {
+  return arr;
+}
+
+largestOfFour([
+  [4, 5, 1, 3],
+  [13, 27, 18, 26],
+  [32, 35, 37, 39],
+  [1000, 1001, 857, 1],
+]);
+
+//todo To be continued (see above)*/
+
+//?Exercise 5
+/*Write a function that receives two parameters, an array, and an index. 
+The function will print the value of the element at the given position (one-based) to the console. 
+For example, given the following array and index, the function will print '6'.
+var array = [3,6,67,6,23,11,100,8,93,0,17,24,7,1,33,45,28,33,23,12,99,100]; 
+var index = 1; Save the changes to your JavaScript file and check your browser console. 
+You should see the number at the correct index printed in the console. 
+If not, investigate and fix it.
+*/
+var myArray4 = [105, 17, 39, 88, 2, 31, 33.5, 23];
+var index = 1;
+function indexPosition(myArray4, index) {
+  return myArray4[index];
+}
+console.log(
+  `the number with the index position ${index}  is = ${indexPosition(
+    myArray4,
+    index)
+  }`
